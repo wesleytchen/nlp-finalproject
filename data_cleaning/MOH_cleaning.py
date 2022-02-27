@@ -1,6 +1,8 @@
 import util_cleaning
 
-MOH_file = open('data/trofi/TroFiExampleBase.txt')
+# Might need to fix path to get it running for you
+MOH_file = open('../../nlp-finalproject/data/moh/mohData.txt')
+
 
 lines = MOH_file.readlines()
 number_of_lines = len(lines)
