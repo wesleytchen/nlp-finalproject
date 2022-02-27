@@ -1,5 +1,6 @@
 import util_cleaning
 
+# Unsure why relative path works here but not in MOH_cleaning
 trofi_file = open('data/trofi/TroFiExampleBase.txt')
 lines = []
 label = 0

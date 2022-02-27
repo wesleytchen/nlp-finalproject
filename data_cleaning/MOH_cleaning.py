@@ -9,7 +9,7 @@ number_of_lines = len(lines)
 sentence_target_label = []
 
 # Go through each line other than the first line and the last two as those aren't labeled sentences
-for line in MOH_file.readlines()[1:number_of_lines-2]:
+for line in lines[1:number_of_lines-2]:
     line = line.split()
     # Target word is defined at the beginning of each sentence
     target_word = line[0]
@@ -17,7 +17,7 @@ for line in MOH_file.readlines()[1:number_of_lines-2]:
     # Sentence starts at third word (delineated by space) and ends at third to last word.
     sentence = line[2:length_of_line-2]
     # Label is at 2nd to last word (delinated by space)
-    label_word = sentence[length_of_line-2]
+    label_word = line[length_of_line-2]
     if label_word == 'literal':
         label = 0
     else:
