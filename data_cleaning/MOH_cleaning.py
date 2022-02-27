@@ -1,27 +1,19 @@
+import csv
 import util_cleaning
 
-# Might need to fix path to get it running for you
-MOH_file = open('../../nlp-finalproject/data/moh/mohData.txt')
+def get_moh_tuples():
+    sentence_target_index_label = []
+    csv_file = open('../../nlp-finalproject/data/moh/MOH.csv')
+    lines = csv.reader(csv_file)
+    # Skip over first line
+    next(lines)
+    for line in lines:
+        # Below line is partially taken from the github for the original project
+        print(line)
+        sentence_target_index_label.append([line[1].split(), int(line[2]), int(line[3])])
+
+    return util_cleaning.tokenize_and_print_metrics(sentence_target_index_label)
 
 
-lines = MOH_file.readlines()
-number_of_lines = len(lines)
-sentence_target_label = []
-
-# Go through each line other than the first line and the last two as those aren't labeled sentences
-for line in lines[1:number_of_lines-2]:
-    line = line.split()
-    # Target word is defined at the beginning of each sentence
-    target_word = line[0]
-    length_of_line = len(line)
-    # Sentence starts at third word (delineated by space) and ends at third to last word.
-    sentence = line[2:length_of_line-2]
-    # Label is at 2nd to last word (delinated by space)
-    label_word = line[length_of_line-2]
-    if label_word == 'literal':
-        label = 0
-    else:
-        label = 1
-    sentence_target_label.append((sentence, target_word, label))
-
-sentence_tokens_target_label = util_cleaning.tokenize_and_print_metrics(sentence_target_label)
+if __name__ == '__main__':
+    get_moh_tuples()

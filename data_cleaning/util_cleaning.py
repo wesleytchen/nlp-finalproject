@@ -16,10 +16,7 @@ def tokenize_and_print_metrics(lines):
     for sentence, target, label in lines:
         if label == 1:
             num_metaphor += 1
-        # Convert list of words back to string of words seperated by spaces
-        sentence = ' '.join(sentence)
-        # Tokenize
-        sentence_tokens = tokenizer.tokenize(sentence)
+        sentence_tokens = sentence
         for token in sentence_tokens:
             num_tokens += 1
             vocab.add(token)
