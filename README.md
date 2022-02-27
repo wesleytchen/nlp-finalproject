@@ -16,3 +16,6 @@ Write more extensively about why metaphor detection and interpretation is a usef
 
 ## Literature Review
 https://docs.google.com/document/d/1AkKqzTb1y0EDB59pkaP_easuUyFMB1plDgxZbKblTzo/edit?usp=sharing
+
+## Midpoint Checkpoint
+https://docs.google.com/document/d/1qYrPfBPui4cZfyWA8caYjGRBGRAbuwgBULQeyWm1LRg/edit?usp=sharing
