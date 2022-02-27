@@ -1,6 +1,6 @@
 import util_cleaning
 
-trofi_file = open('../data/trofi/TroFiExampleBase.txt')
+trofi_file = open('data/trofi/TroFiExampleBase.txt')
 lines = []
 label = 0
 cur_word = ''
