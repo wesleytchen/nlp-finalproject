@@ -1,8 +1,5 @@
-from nltk.tokenize import WordPunctTokenizer
-
-tokenizer = WordPunctTokenizer()
-
-MOH_file = open('data/moh/Metaphor-Emotion-Data-Files/Data-metaphoric-or-literal.txt')
+import util_cleaning
+MOH_file = open('../data/moh/Metaphor-Emotion-Data-Files/Data-metaphoric-or-literal.txt')
 
 lines = MOH_file.readlines()
 number_of_lines = len(lines)
@@ -24,7 +21,4 @@ for line in MOH_file.readlines()[1:number_of_lines-2]:
         label = 1
     sentence_target_label.append((sentence, target_word, label))
 
-
-
-
-
+sentence_tokens_target_label = util_cleaning.tokenize_and_print_metrics(sentence_target_label)
