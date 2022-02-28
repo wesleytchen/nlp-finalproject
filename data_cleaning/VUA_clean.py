@@ -8,8 +8,6 @@ def get_vua_tuples():
     lines = csv.reader(vua_file)
     next(lines)
     for line in lines:
-        words = line[3].split()
-        print(words)
         sentence_target_index_label.append([line[3].split(), int(line[4]), int(line[5])])
     return util_cleaning.tokenize_and_print_metrics(sentence_target_index_label)
 
