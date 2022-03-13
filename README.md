@@ -19,3 +19,6 @@ https://docs.google.com/document/d/1AkKqzTb1y0EDB59pkaP_easuUyFMB1plDgxZbKblTzo/
 
 ## Midpoint Checkpoint
 https://docs.google.com/document/d/1qYrPfBPui4cZfyWA8caYjGRBGRAbuwgBULQeyWm1LRg/edit?usp=sharing
+
+## Final Paper
+https://docs.google.com/document/d/1T696xsxHhxazr59KLrPmL0lc6N7j6AfGgfAa6wTYSz4/edit?usp=sharing
