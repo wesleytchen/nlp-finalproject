@@ -4,7 +4,7 @@ import util_cleaning
 
 def get_mohx_tuples():
     sentence_target_index_label = []
-    csv_file = open('../../nlp-finalproject/data/MOH-X/MOH-X_Data.csv')
+    csv_file = open('../../nlp-finalproject/data/MOH-X/MOH-X_formatted_svo.csv')
     lines = csv.reader(csv_file)
     # Skip over first line
     next(lines)

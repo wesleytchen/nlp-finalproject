@@ -4,7 +4,7 @@ import csv
 
 def get_trofi_tuples():
     sentence_target_index_label = []
-    csv_file = open('../data/TroFi/TroFi_formatted_all3737.csv')
+    csv_file = open('../nlp-finalproject/data/trofi/TroFi_formatted_all3737.csv')
     lines = csv.reader(csv_file)
     next(lines)
     for line in lines:

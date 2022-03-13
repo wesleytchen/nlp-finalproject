@@ -3,7 +3,7 @@ import util_cleaning
 
 def get_moh_tuples():
     sentence_target_index_label = []
-    csv_file = open('../../nlp-finalproject/data/moh/MOH.csv')
+    csv_file = open('../../nlp-finalproject/data/moh/MOH_formatted.csv')
     lines = csv.reader(csv_file)
     # Skip over first line
     next(lines)
