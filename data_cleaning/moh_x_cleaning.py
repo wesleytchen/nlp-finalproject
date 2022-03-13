@@ -11,7 +11,6 @@ def get_mohx_tuples():
     for line in lines:
         # Below line is partially taken from the github for the original project
         sentence_target_index_label.append([line[3][1:].split(), int(line[4]), int(line[5])])
-
     return util_cleaning.tokenize_and_print_metrics(sentence_target_index_label)
 
 
