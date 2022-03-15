@@ -1,4 +1,4 @@
-# NLP final project - Wesley Chen, Jake Zweifler
+# NLP final project - Wesley Chen, Jake Zweifler, Owen Karpf
 
 ## Project Summary
 ### Project short description:
